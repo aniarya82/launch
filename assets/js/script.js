@@ -28,7 +28,7 @@ $(function(){
 				message += "left until the new year!";
 			}
 			else {
-				message += "left to Decemer 15, 2014 from now!";
+				message += "left to <span class=\"label label-primary\">Decemer 15, 2014</span> from now!";
 			}
 			
 			note.html(message);

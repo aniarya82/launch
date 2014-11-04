@@ -1,7 +1,7 @@
 .countdownHolder{
-	width:450px;/*init: 450px*/
+	/*width:550px;/*init: 450px*/
 	margin:0 auto;
-	font: 40px/1.5 "source_sans_probold",'Open Sans Condensed',sans-serif;
+	font: 50px/1.5 "source_sans_probold",'Open Sans Condensed',sans-serif;
 	text-align:center;
 	letter-spacing:-3px;
 }
@@ -48,7 +48,7 @@
  * of the countdown that you don't need.
  */
 
-.countDays{ /* display:none !important;*/ }
+.countDays{ /* display:none !important;*/font-size: }
 .countDiv0{ /* display:none !important;*/ }
 .countHours{}
 .countDiv1{}
