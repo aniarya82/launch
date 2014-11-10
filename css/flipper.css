@@ -1,0 +1,349 @@
+
+.subject_toggle
+{
+    display: inline-block;
+    /*float: right !important;*/
+}
+
+.color-blocks h1,
+.color-blocks h2,
+.color-blocks a
+{
+    /*font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;*/
+}
+.color-blocks a.flipper
+{
+    display: block;
+
+    width: 192px;
+    height: 181px;
+}
+.color-blocks h1
+{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: normal;
+
+    margin: 38px 0 0;
+
+    color: #fff;
+}
+.color-blocks h2
+{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+
+    margin: 0 0 47px;
+
+    color: #fff;
+}
+.color-blocks .blocks
+{
+    height: 362px;
+    margin-bottom: 20px;
+}
+.color-blocks .flip-container
+{
+    /*float: left;*/
+    /*margin: 0 !important;*/
+
+    width: 192px;
+    height: 181px;
+}
+.color-blocks .front,
+.color-blocks .back
+{
+    width: 192px;
+    height: 181px;
+    padding: 0;
+
+    color: #fff;
+    border: 0;
+}
+.color-blocks .front
+{
+    opacity: .9;
+}
+.color-blocks .front span
+{
+    display: inline-block;
+
+    height: 74px;
+    margin-top: 58px;
+
+    background: url(../../images/home/nmhp_blocks.png) no-repeat;
+}
+.color-blocks .back
+{
+    font-size: 14px;
+}
+.color-blocks .back strong:first-child
+{
+    /*margin-top: 49px;*/
+}
+.color-blocks .back strong
+{
+    font-size: 21px;
+
+    display: block;
+
+    margin: 25px 0 0 0;
+}
+.color-blocks .back span
+{
+    opacity: .5;
+}
+.color-blocks .army .front,
+.color-blocks .army .back
+{
+    text-align: center;
+
+    background-color: #706d3c;
+}
+.color-blocks .army span
+{
+    width: 111px;
+
+    background-position: -428px 0;
+}
+.color-blocks .orange .front,
+.color-blocks .orange .back
+{
+    text-align: center;
+
+    background-color: #e65527;
+}
+.color-blocks .orange span
+{
+    width: 74px;
+
+    background-position: -347px 0;
+}
+.color-blocks .teal .front,
+.color-blocks .teal .back
+{
+    text-align: center;
+
+    background-color: #37a5b3;
+}
+.color-blocks .teal span
+{
+    width: 51px;
+
+    background-position: -338px -78px;
+}
+.color-blocks .plum .front,
+.color-blocks .plum .back
+{
+    text-align: center;
+
+    background-color: #363948;
+}
+.color-blocks .plum span
+{
+    width: 141px;
+
+    background-position: -122px -78px;
+}
+.color-blocks .purple .front,
+.color-blocks .purple .back
+{
+    text-align: center;
+
+    background-color: #716f84;
+}
+.color-blocks .purple span
+{
+    width: 96px;
+
+    background-position: -245px 0;
+}
+.color-blocks .yellow .front,
+.color-blocks .yellow .back
+{
+    text-align: center;
+
+    background-color: #d5bc3a;
+}
+.color-blocks .yellow span
+{
+    width: 109px;
+
+    background-position: -2px -78px;
+}
+.green
+{
+    background-color: #5ea07f;
+}
+.color-blocks .green .front,
+.color-blocks .green .back
+{
+    text-align: center;
+
+    background-color: #5ea07f;
+}
+.color-blocks .green span
+{
+    width: 170px;
+
+    background-position: 0 0;
+}
+.color-blocks .blue .front,
+.color-blocks .blue .back
+{
+    text-align: center;
+
+    background-color: #1d6285;
+}
+.color-blocks .blue span
+{
+    width: 63px;
+
+    background-position: -270px -78px;
+}
+.color-blocks .sky .front,
+.color-blocks .sky .back
+{
+    text-align: center;
+
+    background-color: #86b3bb;
+}
+.color-blocks .sky span
+{
+    width: 159px;
+
+    background-position: 0 -179px;
+}
+.color-blocks .blocks .black
+{
+    float: left;
+
+    width: 192px;
+    height: 181px;
+
+    text-align: center;
+
+    background-color: #000;
+}
+.color-blocks .blocks .black span
+{
+    display: inline-block;
+
+    width: 113px;
+    height: 51px;
+    margin: 29px 0 25px;
+
+    background: url(../../images/home/nmhp_blocks.png) no-repeat -422px -76px;
+}
+.color-blocks .blocks .black a
+{
+    font-size: 19px;
+
+    float: none;
+
+    width: 100px;
+    height: auto;
+    margin: 0;
+
+    white-space: nowrap;
+
+    color: #000;
+}
+.color-blocks p
+{
+    font-size: 13px;
+
+    text-align: center;
+}
+.color-blocks p a
+{
+    color: #4c3e31;
+}
+.color-blocks p a span
+{
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    margin: 4px auto 0;
+
+    background: url(../../images/home/nmhp_blocks.png) -508px -137px;
+}
+.flip-container
+{
+    -webkit-perspective: 1000;
+       -moz-perspective: 1000;
+        -ms-perspective: 1000;
+            perspective: 1000;
+}
+.flip-container:hover .back
+{
+    -webkit-transform: rotateY(0deg);
+       -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+}
+.flip-container:hover .front
+{
+    -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back
+{
+    width: 225px;
+    height: 225px;
+}
+.flipper
+{
+    position: relative;
+
+    -webkit-transition: .6s;
+       -moz-transition: .6s;
+        -ms-transition: .6s;
+            transition: .6s;
+}
+.front,
+.back
+{
+    position: absolute;
+    left: 0;
+
+    -webkit-transition: .6s;
+       -moz-transition: .6s;
+        -ms-transition: .6s;
+            transition: .6s;
+
+    border: 1px solid #444;
+
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+.front
+{
+    z-index: 2;
+
+    -webkit-transform: rotateY(0deg);
+       -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+
+    background-color: #fff;
+}
+.back
+{
+    -webkit-transform: rotateY(-180deg);
+       -moz-transform: rotateY(-180deg);
+        -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+
+    background-color: #ddd;
+}
+/* Flipper styling ends here */
+

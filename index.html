@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/flipper.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font.css">
 
 	<!-- Countdown timer -->
@@ -59,14 +60,141 @@
 		font-family: source_sans_probold;
 		text-align: center;
 		color: rgba(237,237,237,1);
+		margin-top: -140px;
+		margin-bottom: -20px;
 	}
+	.well{
+		background: transparent;
+		border: none;
+	}
+	/*.well:hover{
+		-webkit-transform: rotateY(180deg);
+		-webkit-transform-style: preserve-3d;
+		transform: rotateY(180deg);
+		transform-style: preserve-3d;
+	}*/
 	#carousel-example-generic{
-		/*background: url("img/device-iphone-wireframe-shell.png");*/
+		/*-webkit-border-image: url("img/device-iphone-wireframe-shell.png");
+		-o-border-image: url("img/device-iphone-wireframe-shell.png");
+		-moz-border-image: url("img/device-iphone-wireframe-shell.png");
+		border-image: url("img/device-iphone-wireframe-shell.png");*/
+		/*border: 20px solid green;*/
 		margin-top: -100px;
 	}
 	.item img{
 		height: 30px;
 	}
+
+	/*.well {
+		-webkit-transition: .6s;
+		-moz-transition: .6s;
+		-o-transition: .6s;
+		transition: .6s;
+
+		-webkit-perspective: 1000;
+		-moz-perspective: 1000;
+		-o-perspective: 1000;
+		perspective: 1000;
+	}
+
+	.well:hover .back {
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	.well:hover .front {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+	.well
+	.front
+	.back 
+	{
+		width: 220px;
+		height: 220px;
+	}
+
+	.front,
+	.back
+	{
+	    /*position: absolute;
+	    left: 0;
+
+	    -webkit-transition: .6s;
+	       -moz-transition: .6s;
+	        -ms-transition: .6s;
+	            transition: .6s;
+
+	    /*border: 1px solid #444;
+
+	    -webkit-backface-visibility: hidden;
+	       -moz-backface-visibility: hidden;
+	        -ms-backface-visibility: hidden;
+	            backface-visibility: hidden;
+	}
+	.front
+	{
+	    z-index: 2;
+
+	    -webkit-transform: rotateY(0deg);
+	       -moz-transform: rotateY(0deg);
+	        -ms-transform: rotateY(0deg);
+	            transform: rotateY(0deg);
+
+	    background-color: blue;
+	}
+	.back
+	{
+	    -webkit-transform: rotateY(-180deg);
+	       -moz-transform: rotateY(-180deg);
+	        -ms-transform: rotateY(-180deg);
+	            transform: rotateY(-180deg);
+
+	    background-color: black;
+	}*/
+
+
+
+
+	.entry-icon {
+	 	position: absolute;
+	 	display: block;
+	 	text-align: center;
+	 	top: 50%;
+	 	left: 0;
+	 	right: 0;
+	 	font-size: 4rem;
+	 	color: #fff;
+	 	text-shadow: 0 0 3rem rgba(0,0,0,.15);
+	 	opacity: 0;
+	 	-webkit-transform: translateY(-50%);
+	 	-moz-transform: translateY(-50%);
+	 	transform: translateY(-50%);
+	 	transition: opacity .2s linear;
+	 	transition-delay: 0.05s;
+	 }
+	 .entry-thumb {
+	 	position: relative;
+	 	display: block;
+	 	border-radius: 3px;
+	 }
+	 .entry-thumb img{
+	 	display: block;
+	 	width: 100%;
+	 	/*border: 1px solid #fff;*/
+	 	border-radius: 3px;
+	 	transition: opacity .2s linear;
+	 }
+	 .entry-thumb:hover img{
+	 	opacity: .55;
+	 }
+	 .entry-thumb:hover .entry-icon{
+	 	opacity: 1;
+	 }
 	</style>
 </head>
 <body>
@@ -96,6 +224,35 @@
 	<div class="col-md-8">
 		<div class="jumbotron">
 			<h1>Coming Soon</h1>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="well well-lg">
+						<div class="entry-thumb">
+							<img src="img/web_store.png">
+							<span class="entry-icon">Chrome Extension Coming Soon</span>
+						</div>
+					</div>
+					<!-- <div class="well">Coming Soon</div> -->
+				</div>
+
+				<div class="col-md-4">
+					<div class="well well-lg">
+						<div class="entry-thumb">
+							<img src="img/playstore.png">
+							<span class="entry-icon">Android App Coming Soon</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="well well-lg">
+						<div class="entry-thumb">
+							<img src="img/iosStore.png">
+							<span class="entry-icon">iOS App Coming Soon</span>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div id="countdown"></div>
@@ -104,7 +261,7 @@
 
 	<div class="col-md-4">
 		<!-- <img src="img/device-iphone-wireframe-shell.png"> -->
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000" datad-wrap="true">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000" data-wrap="true">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 			  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -197,7 +354,7 @@
 
 
 	<footer>
-		<p><span class="glyphicon glyphicon-copyright-mark" style="font-size:12px;"></span> 2014 RODEV. All Rights Reserved</p>
+		<p><span class="glyphicon glyphicon-copyright-mark" style="font-size:12px;"></span> Contact Us: <a href="">prepvocab@gmail.com</a></p>
 	</footer>
 
 </body>
